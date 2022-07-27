@@ -1,12 +1,14 @@
 package ru.profsoft.profnotes_v1
 
 import android.os.Bundle
+import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import ru.profsoft.profnotes_v1.core.gone
 import ru.profsoft.profnotes_v1.databinding.ActivityMainBinding
 import ru.profsoft.profnotes_v1.ui.login.ui.LoginFragment
 
@@ -19,24 +21,28 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        var loginFragment: LoginFragment? = LoginFragment()
-        supportFragmentManager.beginTransaction().add(R.id.container, loginFragment!!)
-            .commit()
-/*
-        val navView: BottomNavigationView = binding.navView
+
+        val toolbar = binding.toolbar
+        setSupportActionBar(toolbar)
+
+
+        val navView: BottomNavigationView = binding.bottomNavigationView
+        navView.gone()
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
+        /*
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+                R.id.navigation_home, R.id.navigation_settings
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
          */
+
 
     }
 }
