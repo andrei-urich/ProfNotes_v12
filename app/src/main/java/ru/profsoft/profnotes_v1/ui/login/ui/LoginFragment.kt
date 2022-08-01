@@ -12,7 +12,7 @@ import ru.profsoft.profnotes_v1.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
     private var _binding: FragmentLoginBinding? = null
-    private val binding get() =  _binding!!
+    private val binding: FragmentLoginBinding get() =  _binding!!
 
 
     override fun onCreateView(
