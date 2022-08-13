@@ -5,18 +5,29 @@
       <map>
         <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3055" />
         <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/bg_bottom_bar.xml" value="0.1" />
+        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/bg_bottom_navigation_bar.xml" value="0.2425" />
+        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/bg_btn_new_note.xml" value="0.137" />
         <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/bg_button.xml" value="0.3055" />
         <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/bg_login_edit_text.xml" value="0.3055" />
+        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/bg_new_note.xml" value="0.2425" />
         <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/bg_splash.xml" value="0.3055" />
         <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/edit_text_cursor.xml" value="0.3055" />
+        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2425" />
         <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3055" />
         <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1935" />
+        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/ic_notification.xml" value="0.2425" />
+        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.2425" />
+        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/ic_search.xml" value="0.2425" />
         <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/ic_splash.xml" value="0.3055" />
+        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/drawable/ic_test_user.xml" value="0.2425" />
         <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/layout/activity_splash_screen.xml" value="0.3625" />
-        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/layout/fragment_home.xml" value="0.3625" />
-        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/layout/bottom_app_bar.xml" value="0.2975630611372381" />
+        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/layout/fragment_login.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/layout/fragment_new_note.xml" value="0.33" />
         <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/layout/fragment_notifications.xml" value="0.3625" />
+        <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/layout/item_new_note.xml" value="0.2975630611372381" />
         <entry key="..\:/Users/a_uri/AndroidStudioProjects/ProfNotes_v1/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3625" />
       </map>
     </option>

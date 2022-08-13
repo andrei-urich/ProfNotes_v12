@@ -15,6 +15,20 @@
     <string name="loginWithoutAccount">Или войдите без аккаунта, если не хотите пользоваться всеми возможностями</string>
     <string name="hintForgotPassword">Не помните свой пароль? Восстановите пароль</string>
     <string name="btnLogin">Войти</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Home -->
+    <string name="goodMorning">Доброе утро,</string>
+    <string name="today">Сегодня</string>
+    <string name="news">Новости</string>
+    <string name="hintSearch">Поиск по заметкам</string>
+    <string name="labelNewNotes">Новые заметки %1$</string>
+    <string name="labelMyTasks">Мои задачи %1$</string>
+    <string name="allTasks"> <u>Все задачи</u> </string>
+
+    <!-- New Note -->
+    <string name="textLabelNewNotePage">Новая запись</string>
+    <string name="btnTextNewNote">Заметка</string>
+    <string name="btnTextNewTask">Задача</string>
+
 </resources>

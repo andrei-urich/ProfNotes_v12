@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import ru.profsoft.profnotes_v1.R
 import ru.profsoft.profnotes_v1.core.spanString
 import ru.profsoft.profnotes_v1.databinding.FragmentLoginBinding
@@ -12,7 +14,7 @@ import ru.profsoft.profnotes_v1.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
     private var _binding: FragmentLoginBinding? = null
-    private val binding: FragmentLoginBinding get() =  _binding!!
+    private val binding: FragmentLoginBinding get() = _binding!!
 
 
     override fun onCreateView(
@@ -41,11 +43,17 @@ class LoginFragment : Fragment() {
                 color = requireContext().getColor(R.color.yellow)
             )
         }
-    }
+        binding.btnLogin.apply {
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+            setOnClickListener {
+                findNavController().navigate(R.id.action_loginFragment_to_navigation_home)
+            }
+        }
+
+        fun onDestroyView() {
+            super.onDestroyView()
+            _binding = null
+        }
     }
 }
 

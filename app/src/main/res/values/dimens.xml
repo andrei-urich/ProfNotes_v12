@@ -6,4 +6,5 @@
     <dimen name="fragment_horizontal_margin">16dp</dimen>
     <dimen name="fragment_vertical_margin">16dp</dimen>
     <dimen name="page_margin">20dp</dimen>
+    <dimen name="default_corner_radius">8dp</dimen>
 </resources>
