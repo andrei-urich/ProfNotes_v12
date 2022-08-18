@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/page_margin"
+            android:layout_marginRight="@dimen/page_margin">
+
+
+            <ImageView
+                android:id="@+id/ivArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/arrow" />
+
+            <TextView
+                android:id="@+id/tvLabelNewNote"
+                style="@style/TextH1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/textLabelNewNotePage"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/llButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:backgroundTint="@null"
+                android:orientation="horizontal"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toBottomOf="@id/tvLabelNewNote">
+
+                <Button
+                    android:id="@+id/btnNewNote"
+                    style="@style/TextH2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_new_note"
+                    android:enabled="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="12dp"
+                    android:text="@string/btnTextNewNote"
+                    android:textColor="@drawable/button_text"
+                    app:backgroundTint="@null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="0dp" />
+
+                <Button
+                    android:id="@+id/bntNewTask"
+                    style="@style/TextH2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_new_note"
+                    android:enabled="false"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="12dp"
+                    android:text="@string/btnTextNewTask"
+                    android:textColor="@drawable/button_text"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNoteName"
+                style="@style/TextH1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/new_note_head"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/llButtons" />
+
+            <EditText
+                android:id="@+id/etNewNoteText"
+                style="@style/TextH3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autofillHints="username"
+                android:background="@drawable/bg_login_edit_text"
+                android:hint="@string/hint_new_note_text"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                app:layout_constraintTop_toBottomOf="@+id/tvNoteName"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:id="@+id/tvNoteDescription"
+                style="@style/TextH1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/new_note_descrition"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/etNewNoteText" />
+
+            <EditText
+                android:id="@+id/etNewNoteDescription"
+                style="@style/TextH3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autofillHints="username"
+                android:background="@drawable/bg_login_edit_text"
+                android:hint="@string/hint_new_note_text"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                app:layout_constraintTop_toBottomOf="@+id/tvNoteDescription"
+                tools:ignore="TextFields" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clFriendsCircle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/etNewNoteDescription">
+
+                <TextView
+                    android:id="@+id/tvFriendsCircle"
+                    style="@style/TextH1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/friends_circle"
+                    android:textColor="@color/white"
+                    app:drawableEnd="@drawable/ic_search_gray"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/etFriendsSearch"
+                    style="@style/TextH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:autofillHints="username"
+                    android:background="@drawable/bg_login_edit_text"
+                    android:drawableStart="@drawable/ic_search"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/friends_search"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray"
+                    android:textCursorDrawable="@drawable/edit_text_cursor"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/tvFriendsCircle"
+                    tools:ignore="TextFields" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/etFriendsSearch"
+                    app:layout_goneMarginTop="10dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clFriendsCircle" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/CoordinatorLayoutActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/page_margin"
+        android:layout_marginRight="@dimen/page_margin"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/extended_fab"
+            android:textStyle="bold"
+            android:fontFamily="@font/circe_extra_bold"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_btn_new_note"
+            android:text="@string/create_new_note"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            app:backgroundTint="@null"
+            app:layout_anchorGravity="bottom|right|end" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,5 +30,17 @@
     <string name="textLabelNewNotePage">Новая запись</string>
     <string name="btnTextNewNote">Заметка</string>
     <string name="btnTextNewTask">Задача</string>
+    <string name="CreateAccount">Создать Аккаунт</string>
+    <string name="registration">Регистрация</string>
+    <string name="hint_registration">Пожалуйста, введите данные для новой учетной записи</string>
+    <string name="hint_name">Имя</string>
+    <string name="btn_registration">Регистрация</string>
+    <string name="enter_user_account">Войти с учетной записью</string>
+    <string name="new_note_head">Новая заметка</string>
+    <string name="hint_new_note_text">Начните вводить текст здесь</string>
+    <string name="new_note_descrition">Описание заметки</string>
+    <string name="friends_circle">Круг друзей</string>
+    <string name="friends_search">Поиск по друзьям</string>
+    <string name="create_new_note">Создать заметку</string>
 
 </resources>
