@@ -42,5 +42,7 @@
     <string name="friends_circle">Круг друзей</string>
     <string name="friends_search">Поиск по друзьям</string>
     <string name="create_new_note">Создать заметку</string>
+    <string name="tv_task_status_new">Новое</string>
+    <string name="tv_change_status">Сменить статус</string>
 
 </resources>

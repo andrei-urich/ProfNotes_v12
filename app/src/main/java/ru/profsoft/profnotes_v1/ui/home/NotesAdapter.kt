@@ -5,10 +5,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import ru.profsoft.profnotes_v1.R
-import ru.profsoft.profnotes_v1.core.Note
 import ru.profsoft.profnotes_v1.databinding.ItemNewNoteBinding
 
-class NewNotesAdapter : RecyclerView.Adapter<NewNotesAdapter.ViewHolder>() {
+class NotesAdapter : RecyclerView.Adapter<NotesAdapter.ViewHolder>() {
     val noteList = ArrayList<Note>()
 
     class ViewHolder(item: View) : RecyclerView.ViewHolder(item) {
@@ -27,7 +26,7 @@ class NewNotesAdapter : RecyclerView.Adapter<NewNotesAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_new_note, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.item_note, parent, false)
         return ViewHolder(view)
     }
 
