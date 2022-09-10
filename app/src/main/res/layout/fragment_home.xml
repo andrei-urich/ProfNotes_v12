@@ -42,10 +42,11 @@
             style="@style/TextH2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="@id/ivUser"
             app:layout_constraintStart_toStartOf="@+id/tvHello"
             app:layout_constraintTop_toBottomOf="@+id/tvHello"
-            tools:text="Петя" />
+            android:text="Петя" />
 
         <ImageView
             android:id="@+id/ivNotification"
@@ -137,7 +138,7 @@
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/vpNotes"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="136dp"
             android:layout_marginTop="12dp"
             app:layout_constraintEnd_toEndOf="@+id/tvNewNotesLabel"
@@ -168,6 +169,7 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNotes"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
@@ -180,7 +182,9 @@
         <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:id="@+id/CoordinatorLayoutBottomNavigation"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
 
             <com.google.android.material.bottomappbar.BottomAppBar
                 android:id="@+id/bottomAppBar"
