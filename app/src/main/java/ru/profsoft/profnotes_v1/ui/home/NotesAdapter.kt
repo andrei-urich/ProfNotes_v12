@@ -5,13 +5,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import ru.profsoft.profnotes_v1.R
-import ru.profsoft.profnotes_v1.databinding.ItemNewNoteBinding
+import ru.profsoft.profnotes_v1.model.entity.Note
+import ru.profsoft.profnotes_v1.databinding.ItemNoteBinding
 
 class NotesAdapter : RecyclerView.Adapter<NotesAdapter.ViewHolder>() {
     val noteList = ArrayList<Note>()
 
     class ViewHolder(item: View) : RecyclerView.ViewHolder(item) {
-        private val binding = ItemNewNoteBinding.bind(item)
+        private val binding = ItemNoteBinding.bind(item)
         fun bind(note: Note) = with(binding) {
             ivUser.setImageResource(note.imageId)
             tvTitle.text = note.title
