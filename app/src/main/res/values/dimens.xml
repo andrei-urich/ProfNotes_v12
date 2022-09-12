@@ -7,4 +7,7 @@
     <dimen name="fragment_vertical_margin">16dp</dimen>
     <dimen name="page_margin">20dp</dimen>
     <dimen name="default_corner_radius">8dp</dimen>
+    <!-- ViewPager2 scroll to preview of next page -->
+    <dimen name="viewpager_next_item_visible">26dp</dimen>
+    <dimen name="viewpager_current_item_horizontal_margin">42dp</dimen>
 </resources>
